@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Book my desk</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>Book my desk</h1>
+  <p class="sub" id="deskBadge">Loading desk…</p>
+
+  <label>Week
+    <select id="week"></select>
+  </label>
+
+  <fieldset id="days">
+    <legend>Days</legend>
+    <label><input type="checkbox" data-day="1" /> Monday</label>
+    <label><input type="checkbox" data-day="2" /> Tuesday</label>
+    <label><input type="checkbox" data-day="3" /> Wednesday</label>
+    <label><input type="checkbox" data-day="4" /> Thursday</label>
+    <label><input type="checkbox" data-day="5" /> Friday</label>
+  </fieldset>
+
+  <label>Time slot
+    <select id="slot">
+      <option value="allday" selected>All day (9:30 – 18:00)</option>
+      <option value="morning">Morning (9:30 – 13:00)</option>
+      <option value="afternoon">Afternoon (14:00 – 18:00)</option>
+    </select>
+  </label>
+
+  <button id="apply">Apply</button>
+  <button id="refresh" class="secondary">Refresh week</button>
+  <div id="status"></div>
+
+  <details id="debugBox">
+    <summary>Debug log</summary>
+    <pre id="log"></pre>
+    <button id="clearLog" class="secondary">Clear</button>
+  </details>
+
+  <details>
+    <summary>Settings</summary>
+
+    <label>Resource ID
+      <div class="inline">
+        <input id="resourceId" type="number" />
+        <button id="resolveResource" class="icon" title="Resolve name">🔄</button>
+      </div>
+      <span id="resourceName" class="hint">—</span>
+    </label>
+
+    <label>Organizer ID <input id="organizerId" type="number" /></label>
+    <label>Summary <input id="summary" type="text" /></label>
+
+    <button id="save">Save</button>
+    <button id="useJooxterPref" class="secondary">
+      Use my Jooxter preferred desk
+    </button>
+  </details>
+
+  <script src="popup.js"></script>
+</body>
+</html>

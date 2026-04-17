@@ -1,0 +1,81 @@
+body {
+  font-family: -apple-system, system-ui, sans-serif;
+  width: 320px;
+  padding: 14px;
+  margin: 0;
+}
+h1 { font-size: 16px; margin: 0 0 2px 0; }
+.sub { font-size: 12px; color: #333; margin: 0 0 12px 0; }
+
+label { display: block; font-size: 12px; margin: 8px 0; color: #333; }
+select, input[type=text], input[type=number] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.inline { display: flex; gap: 6px; align-items: stretch; margin-top: 3px; }
+.inline input { flex: 1; margin-top: 0; }
+button.icon {
+  width: 34px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: #e9ecef;
+  color: #333;
+}
+button.icon:hover { background: #dee2e6; }
+.hint { display: block; font-size: 11px; color: #666; margin-top: 3px; }
+
+fieldset { border: 1px solid #ddd; border-radius: 4px; padding: 6px 10px; margin: 10px 0; }
+legend { font-size: 12px; color: #666; padding: 0 4px; }
+fieldset label { margin: 4px 0; font-size: 13px; display: flex; align-items: center; gap: 6px; }
+fieldset input[type=checkbox] { width: auto; margin: 0; }
+
+button {
+  width: 100%;
+  padding: 9px;
+  margin-top: 10px;
+  background: #3B86FF;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+button:hover { background: #2a6fd4; }
+button:disabled { background: #aaa; cursor: not-allowed; }
+button.secondary { background: #e9ecef; color: #333; }
+button.secondary:hover { background: #dee2e6; }
+
+#status { margin-top: 10px; font-size: 12px; min-height: 16px; white-space: pre-line; }
+.ok { color: #1a7f37; }
+.err { color: #c92a2a; }
+
+details { margin-top: 14px; font-size: 12px; }
+summary { cursor: pointer; color: #666; }
+
+#log {
+  background: #111;
+  color: #0f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 11px;
+  padding: 6px;
+  border-radius: 4px;
+  max-height: 180px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 6px 0;
+}
+
+.day-desk {
+  color: #666;
+  font-size: 11px;
+  margin-left: 4px;
+}

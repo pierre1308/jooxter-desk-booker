@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Jooxter Desk Booker",
+  "version": "1.2.1",
+  "description": "Book your preferred Jooxter desk: multi-day checkboxes, shows existing bookings, unbook support.",
+  "permissions": ["cookies", "storage"],
+  "host_permissions": [
+    "https://app.jooxter.com/*",
+    "https://*.jooxter.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Book my desk"
+  },
+  "icons": { "128": "icon.png" }
+}
